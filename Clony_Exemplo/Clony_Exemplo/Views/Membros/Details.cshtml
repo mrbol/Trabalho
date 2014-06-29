@@ -1,0 +1,120 @@
+﻿@model Clony_Exemplo.Models.Membro
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Detalhes</h2>
+
+<fieldset>
+    <legend>Membro</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataNascimento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataNascimento)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Identidade)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Identidade)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Mae)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Mae)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Pai)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Pai)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EstadoCivil)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EstadoCivil)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Filhos)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Filhos)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Quantos)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Quantos)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Endereco)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Endereco)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cep)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cep)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Telefone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Telefone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Facebook)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Facebook)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataBatismo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataBatismo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cargo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cargo)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

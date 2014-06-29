@@ -1,0 +1,124 @@
+﻿@model Clony_Exemplo.Models.Membro
+
+@{
+    ViewBag.Title = "Excluir";
+}
+
+<h2>Excluir</h2>
+
+<h3>Você deseja realmente excluir?</h3>
+<fieldset>
+    <legend>Membro</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataNascimento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataNascimento)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Identidade)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Identidade)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Mae)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Mae)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Pai)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Pai)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EstadoCivil)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EstadoCivil)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Filhos)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Filhos)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Quantos)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Quantos)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Endereco)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Endereco)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cep)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cep)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Telefone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Telefone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Facebook)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Facebook)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataBatismo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataBatismo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cargo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cargo)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Confirmar" /> |
+        @Html.ActionLink("Voltar", "Index")
+    </p>
+}
