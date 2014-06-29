@@ -3,7 +3,7 @@ Trabalho
 
 Testes e Exemplos
 
- - Aplição básica de cadastro utiizando MVC, EntityFramework e BootStrap
+ - Aplicação básica de cadastro utiizando MVC, EntityFramework e BootStrap
  - Hospedagem gratuita - http://gerenciadormembros.apphb.com/
  - Referencias 
  		- http://www.asp.net/mvc
